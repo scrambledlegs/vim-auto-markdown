@@ -1,5 +1,5 @@
 function! TerrooMarkdown()
-	inoremap code<Tab> ```sh<CR><CR>```<Left><Left><Left><Up>
+	inoremap code<Tab> ```<CR><CR>```<Left><Left><Left><Up>
 	inoremap js<Tab> ```js<CR>console.log('')<CR>```<Up><Right><Right><Right><Right><Right><Right><Right><Right><Right><Right>
 	inoremap json<Tab> ```json<CR>{<CR><CR>}<CR>```<Up><Up><space><space>
 	inoremap react<Tab> ```jsx<CR><CR>```<Up>
@@ -8,7 +8,7 @@ function! TerrooMarkdown()
 	inoremap c++<Tab> ```c++<CR><CR>```<Up>
 	inoremap bash<Tab> ```bash<CR><CR>```<Up>
 	inoremap python<Tab> ```python<CR>print('')<CR>```<Up><Right><Right><Right><Right>
-	inoremap img<Tab> ![alt](url)<Left><Left><Left><Left><Left><Left><Left><Left><Left>
+	inoremap img<Tab> ![](url)<Left><Left><Left><Left><Left><Left>
 	inoremap href<Tab> [](url)<Left><Left><Left><Left><Left><Left>
 	inoremap pre<Tab> ``<Left>
 	inoremap hr<tab> ---<CR>
@@ -22,4 +22,3 @@ function! TerrooMarkdown()
 endfunction
 
 au BufReadPost,BufNewFile *.md,*.markdown,*.mdown,*.mkdn,*.mkd,*.mdwn,*.mdtxt,*.mdtext,*.text,*.Rmd, :call TerrooMarkdown()
-
