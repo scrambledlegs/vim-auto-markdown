@@ -9,7 +9,7 @@ function! TerrooMarkdown()
 	inoremap bash<Tab> ```bash<CR><CR>```<Up>
 	inoremap python<Tab> ```python<CR>print('')<CR>```<Up><Right><Right><Right><Right>
 	inoremap img<Tab> ![alt](url)<Left><Left><Left><Left><Left><Left><Left><Left><Left>
-	inoremap href<Tab> [name](url)<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
+	inoremap href<Tab> [](url)<Left><Left><Left><Left><Left><Left>
 	inoremap pre<Tab> ``<Left>
 	inoremap hr<tab> ---<CR>
 	inoremap h1<Tab> #
